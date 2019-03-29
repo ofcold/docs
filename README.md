@@ -6,3 +6,10 @@
 select COLUMN_NAME,column_comment from INFORMATION_SCHEMA.Columns where table_name='table name' and table_schema='database name'
 
 ```
+
+### 允许远程访问mysql `>= 8.0`
+```
+
+grant all privileges on db_name.* to root@'%' with grant option;
+
+```
